@@ -15,6 +15,7 @@
                     @endif
 
                     <!-- {{ __('You are logged in!') }} -->
+                    <a href="{{ url('/short')}}">URLShort</a>
                 </div>
             </div>
         </div>
