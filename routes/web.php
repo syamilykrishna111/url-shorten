@@ -20,3 +20,7 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/short', function(){ return view('url.short'); });
+Route::post('/short', 'URL\UrlController@short');
+Route::get('/short/{link}', 'URL\UrlController@shortLink');
